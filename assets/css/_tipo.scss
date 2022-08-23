@@ -1,0 +1,74 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 56px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 24px;
+}
+h6 {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link {
+  padding: 8px 24px;
+  font-size: 18px;
+  background-color: blueviolet;
+
+  transition: 0.4s ease;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    top: 100%;
+    left: 0;
+
+    transform: translate(30%, -50%);
+
+    width: 0%;
+    height: 2px;
+    background-color: $c4;
+
+    transition: 0.4s ease;
+  }
+
+  &:hover {
+    opacity: 0.8;
+
+    &::after {
+      width: 60%;
+    }
+  }
+}
