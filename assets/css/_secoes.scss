@@ -1,0 +1,41 @@
+.sec__grid {
+  background: linear-gradient(90deg, #3f3f3f 64.78%, #fff8ee 64.78%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 60px;
+  gap: 20px;
+}
+.sec__invertido {
+  background: linear-gradient(90deg, #fff8ee 35%, #3f3f3f 35%);
+}
+
+.sec__txt {
+  font-family: "Josefin Sans", serif;
+  padding: 60px 0;
+  margin-right: 2rem;
+
+  span {
+    font-weight: 700;
+    color: $c3;
+    text-transform: uppercase;
+  }
+  h2 {
+    margin-top: 0.5rem;
+  }
+  p {
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 120%;
+    color: $c3;
+  }
+  a {
+    margin-top: 2rem;
+  }
+}
+
+.sec__img {
+  padding: 60px 0;
+  max-height: 600px;
+  border-radius: 5px;
+}

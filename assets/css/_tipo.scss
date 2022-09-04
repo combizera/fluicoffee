@@ -17,11 +17,35 @@ h1 {
 }
 
 h2 {
-  font-size: 56px;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  color: $coffee-normal;
 }
 
 h3 {
-  font-size: 40px;
+  font-family: "Josefin Sans", serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 130%;
+  text-transform: uppercase;
+
+  position: relative;
+  color: $c0;
+  text-align: center;
+  margin: 5rem 0;
+
+  &:after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    height: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+
+    background: $am;
+  }
 }
 
 h4 {
@@ -32,7 +56,13 @@ h5 {
   font-size: 24px;
 }
 h6 {
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $c0;
 }
 
 a {
@@ -70,5 +100,37 @@ a {
     &::after {
       width: 60%;
     }
+  }
+}
+
+.btn__sec {
+  font-weight: 700;
+  font-size: 1.125rem;
+  display: inline-block;
+  color: $az;
+  text-transform: uppercase;
+  border: 3px solid $az;
+  border-radius: 5px;
+  padding: 0.8rem 2rem 0.5rem 2rem;
+  transition: 0.4s;
+  box-shadow: 3px 4px 13px rgba(0, 0, 0, 0.25);
+  &:hover {
+    background-color: $az;
+    color: $c1;
+    box-shadow: 4px 100px 80px rgba(145, 181, 189, 0.12),
+      7px 30.1471px 24.1177px rgba(145, 181, 189, 0.0781907),
+      6px 12.5216px 10.0172px rgba(145, 181, 189, 0.06),
+      5px 4.5288px 3.62304px rgba(145, 181, 189, 0.0418093);
+  }
+}
+
+.link-txt {
+  color: $az;
+  font-family: inherit;
+  text-decoration: underline;
+  transition: 0.4s ease;
+  &:hover {
+    font-weight: 700;
+    color: #789ca4;
   }
 }

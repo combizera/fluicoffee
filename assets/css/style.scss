@@ -1,19 +1,36 @@
+// Base
+@import "./_base.scss";
+@import "./_layout.scss";
+@import "./_tipo.scss";
+@import "./_secoes.scss";
+@import "./_blog.scss";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-@import "./colors";
-@import "./_tipo.scss";
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+label::selection,
+span::selection,
+strong::selection,
+br::selection,
+p::selection {
+  background-color: #a83e3e;
+  color: #faf9f2;
+}
 
 body {
   width: 100%;
   background-color: $coffee-light;
 }
-
-@import "./_spacing.scss";
-@import "./_layout.scss";
 
 ul {
   display: flex;
@@ -23,6 +40,12 @@ ul {
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-inline-start: 0;
+}
+
+img {
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .borda {
