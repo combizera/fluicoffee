@@ -89,9 +89,8 @@ h5 {
 
 h6 {
   font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 120%;
-  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 100%;
   text-align: center;
   color: #1d1e1f;
 }
@@ -197,6 +196,11 @@ a {
   border-radius: 5px;
 }
 
+.bg-blog {
+  background-color: #f8edde;
+  box-shadow: inset 0 -120px #fff8ee;
+}
+
 .blog__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -267,27 +271,52 @@ a {
 }
 
 .blog__newsletter {
-  background: #fff;
-  padding: 2rem;
+  background: #fff8ee;
+  width: 80%;
+  margin: 0 auto !important;
+  padding: 2rem 2rem 0rem 2rem;
   position: relative;
   box-shadow: 0px 18px 82px rgba(0, 0, 0, 0.07), 0px 5.42647px 24.7206px rgba(0, 0, 0, 0.05), 0px 2.25388px 10.2677px rgba(0, 0, 0, 0.04), 0px 0.815184px 3.71362px rgba(0, 0, 0, 0.02);
 }
+.blog__newsletter h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 120%;
+  text-align: center;
+  color: #1d1e1f;
+  position: relative;
+}
+.blog__newsletter h4 span {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  width: 100px;
+  height: 6px;
+  background: #dda15e;
+  transform: translateX(-50%);
+}
 
 .blog__input {
-  padding: 1rem;
+  padding: 1rem 1rem 0 1rem;
 }
 .blog__input input {
   font-size: 1.125rem;
 }
 
 .blog__form label {
+  margin-top: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  line-height: 120%;
   font-weight: 400;
-  line-height: 125%;
-  color: #fff;
+  color: #606060 !important;
   display: block;
 }
 .blog__form .testee {
   position: relative;
+  width: 70%;
+  margin: 1rem auto;
 }
 .blog__form input,
 .blog__form textarea {
@@ -295,21 +324,22 @@ a {
   border: none;
   padding: 0.6rem 1rem;
   border-radius: 2px 0 0 2px;
-  background-color: #fff;
-  border: 2px solid rgb(220, 220, 220);
+  border: none;
   margin: 0.5rem 0;
   color: #aaa;
   transition: 0.3s;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 200;
 }
 .blog__form input:focus,
 .blog__form textarea:focus {
   outline: none;
-  border: 2px solid rgba(171, 37, 37, 0.5019607843);
-  box-shadow: 0 0 0 2px rgba(171, 37, 37, 0.5019607843);
+  border: none;
+  box-shadow: none;
 }
 .blog__form input:focus + #btn-insc,
 .blog__form textarea:focus + #btn-insc {
-  border: 2px solid rgba(171, 37, 37, 0.5019607843);
+  border: none;
 }
 .blog__form button {
   cursor: pointer;
@@ -317,14 +347,15 @@ a {
   top: 0;
   margin: 0.5rem 0;
   right: 0;
-  font-family: "Playfair Display", serif;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.125rem;
   color: #fff;
-  padding: 0.5rem 2rem;
-  background-color: rgba(171, 37, 37, 0.5019607843);
-  border: 2px solid rgb(220, 220, 220);
+  padding: 0.67rem 2rem;
+  background-color: #dda15e;
+  border: none;
   border-left: 0px;
   transition: 0.3s;
   border-radius: 0 2px 2px 0;
@@ -333,6 +364,8 @@ a {
 .blog__check {
   display: flex;
   align-items: center;
+  margin-top: 1rem;
+  padding-bottom: 2rem;
 }
 .blog__check input {
   width: 15px;
@@ -390,6 +423,130 @@ a {
     margin: 0;
   }
 }
+#numeros {
+  font-family: "Josefin Sans" !important;
+  background-color: #f8edde;
+  margin-top: 4rem;
+}
+
+.num-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 60px 0;
+}
+
+.num-item {
+  display: flex;
+}
+
+.num-img {
+  margin-right: 1rem;
+  margin: auto 0;
+}
+.num-img img {
+  max-width: 55px;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  text-align: left;
+  color: #487cb9;
+}
+
+.num-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.num-txt p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #132942;
+}
+
+.bg-footer {
+  background-color: #f8edde;
+  margin-top: 80px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px 0;
+  gap: 40px;
+}
+
+.footer-tit {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  color: #1d1e1f;
+  margin-bottom: 20px;
+}
+
+footer p,
+a {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #606060;
+}
+
+.footer-flui img {
+  margin-bottom: 20px;
+}
+
+.footer-contato a:hover {
+  text-decoration: underline;
+}
+
+.footer-redes {
+  display: flex;
+}
+.footer-redes a {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.footer-redes a:hover {
+  background-color: tomato;
+}
+
+.footer-map ul {
+  display: inline-block;
+}
+.footer-map ul li {
+  margin-bottom: 0.5rem;
+}
+.footer-map ul a::before {
+  background: #dda15e;
+  width: 5px;
+  height: 2px;
+  position: absolute;
+  content: "";
+  transform: translate(-16px, 8px);
+  transition: 0.3s;
+}
+.footer-map ul a {
+  margin-left: 16px;
+  transition: 0.3s;
+}
+.footer-map ul a:hover {
+  text-decoration: underline;
+  font-size: 1.125rem;
+}
+.footer-map ul a:hover::before {
+  width: 10px;
+  height: 3px;
+}
+
 * {
   margin: 0;
   padding: 0;

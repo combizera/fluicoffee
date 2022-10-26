@@ -1,0 +1,80 @@
+.bg-footer {
+  background-color: $coffee-normal;
+  margin-top: 80px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px 0;
+  gap: 40px;
+}
+
+.footer-tit {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  color: $c0;
+  margin-bottom: 20px;
+}
+
+footer p,
+a {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: $c2;
+}
+
+.footer-flui img {
+  margin-bottom: 20px;
+}
+
+.footer-contato a:hover {
+  text-decoration: underline;
+}
+
+.footer-redes {
+  display: flex;
+
+  a {
+    margin-right: 20px;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: tomato;
+    }
+  }
+}
+
+.footer-map ul {
+  display: inline-block;
+  li {
+    margin-bottom: 0.5rem;
+  }
+  a::before {
+    background: $am;
+    width: 5px;
+    height: 2px;
+    position: absolute;
+    content: "";
+    transform: translate(-16px, 8px);
+    transition: 0.3s;
+  }
+  a {
+    margin-left: 16px;
+    transition: 0.3s;
+    &:hover {
+      text-decoration: underline;
+      font-size: 1.125rem;
+
+      &::before {
+        width: 10px;
+        height: 3px;
+      }
+    }
+  }
+}
