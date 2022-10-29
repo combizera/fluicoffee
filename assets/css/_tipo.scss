@@ -102,6 +102,33 @@ a {
   }
 }
 
+.btn-pri {
+  font-weight: 700;
+  font-size: 1.125rem;
+
+  letter-spacing: 0.05em;
+  color: $coffee-light;
+
+  background: $orange;
+  box-shadow: 0px 21px 80px rgba(254, 100, 30, 0.18),
+    0px 6.33089px 24.1177px rgba(254, 100, 30, 0.11),
+    0px 2.62953px 10.0172px rgba(254, 100, 30, 0.09),
+    0px 0.951048px 3.62304px rgba(254, 100, 30, 0.06);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.4s;
+
+  &:hover {
+    box-shadow: 0px 21px 80px rgba(254, 101, 30, 0.378),
+      0px 6.33089px 24.1177px rgba(254, 101, 30, 0.384),
+      0px 2.62953px 10.0172px rgba(254, 101, 30, 0.29),
+      0px 0.951048px 3.62304px rgba(254, 101, 30, 0.29);
+    transform: scale(1.01);
+  }
+}
+
 .btn__sec {
   font-weight: 700;
   font-size: 1.125rem;

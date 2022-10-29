@@ -12,7 +12,36 @@
   width: 100%;
   height: 100vh;
   background-image: url("./../img/bg.png");
-  // display: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 80px;
+  height: 100vh;
+  h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    letter-spacing: 0.1em;
+
+    color: $coffee-light;
+  }
+
+  h2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+
+    color: $coffee-normal;
+    margin: 20px 0 40px 0;
+  }
 }
 
 header {

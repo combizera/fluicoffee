@@ -1,12 +1,12 @@
 .sec__grid {
-  background: linear-gradient(90deg, #3f3f3f 64.78%, #fff8ee 64.78%);
+  background: linear-gradient(90deg, #ece0cf 64.78%, #fff8ee 64.78%);
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 60px;
   gap: 20px;
 }
 .sec__invertido {
-  background: linear-gradient(90deg, #fff8ee 35%, #3f3f3f 35%);
+  background: linear-gradient(90deg, #fff8ee 35%, #ece0cf 35%);
 }
 
 .sec__txt {
@@ -16,18 +16,22 @@
 
   span {
     font-weight: 700;
-    color: $c3;
+    color: $c2;
     text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 1rem;
+    display: block;
   }
   h2 {
     margin-top: 0.5rem;
+    color: $c2;
   }
   p {
     margin-top: 2rem;
     font-weight: 300;
     font-size: 1.125rem;
     line-height: 120%;
-    color: $c3;
+    color: #746e66;
   }
   a {
     margin-top: 2rem;
@@ -37,7 +41,12 @@
 .sec__img {
   padding: 60px 0;
   max-height: 600px;
-  border-radius: 5px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -79,7 +88,6 @@
 
   .sec__img {
     padding: 60px 0;
-    max-height: 600px;
     border-radius: 5px;
   }
 }
