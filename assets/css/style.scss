@@ -6,6 +6,7 @@
 @import "./_blog.scss";
 @import "./_num.scss";
 @import "./_footer.scss";
+@import "./_maq.scss";
 
 * {
   margin: 0;
@@ -28,6 +29,30 @@ p::selection {
   background-color: #487cb9;
   color: #faf9f2;
 }
+
+/* Estilização da barra de scroll */
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #bdab91 #f6f7f9;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f6f7f9;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #bdab91;
+  border-radius: 20px;
+  border: 3px solid #f6f7f9;
+}
+
+/* Fim da Estilização da barra de scroll */
 
 body {
   width: 100%;

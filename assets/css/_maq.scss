@@ -1,0 +1,119 @@
+.maq-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 120px 60px;
+}
+
+.maq-hero-txt {
+  h2 {
+    font-size: 1.25rem;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: $az-dark;
+    position: relative;
+    &::after {
+      content: "";
+      width: 100px;
+      height: 5px;
+      background-color: $az-dark;
+      position: absolute;
+      left: 0;
+      top: -1rem;
+    }
+  }
+
+  h4 {
+    font-size: 60px;
+    color: $az-dark;
+    padding: 40px 0;
+  }
+
+  p {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 140%;
+    color: $c2;
+  }
+
+  a {
+    font-weight: 700;
+    font-size: 18px;
+
+    letter-spacing: 0.05em;
+    color: $coffee-light;
+
+    background: #fe641e;
+    box-shadow: 0px 21px 80px rgba(254, 100, 30, 0.18),
+      0px 6.33089px 24.1177px rgba(254, 100, 30, 0.11),
+      0px 2.62953px 10.0172px rgba(254, 100, 30, 0.09),
+      0px 0.951048px 3.62304px rgba(254, 100, 30, 0.06);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.4s;
+
+    &:hover {
+      box-shadow: 0px 21px 80px rgba(254, 101, 30, 0.378),
+        0px 6.33089px 24.1177px rgba(254, 101, 30, 0.384),
+        0px 2.62953px 10.0172px rgba(254, 101, 30, 0.29),
+        0px 0.951048px 3.62304px rgba(254, 101, 30, 0.29);
+      transform: scale(1.01);
+    }
+  }
+}
+
+.maq-dados-boxes {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 0.5rem;
+}
+
+.maq-dados-img {
+  background-image: url("./../img/maquina.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.maq-dados-img2 {
+  background-image: url("./../img/blog1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.maq-dados-box {
+  background: #f8edde;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px 20px;
+
+  h6 {
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 120px;
+    color: #fe641e;
+
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    display: flex;
+    justify-content: center;
+  }
+
+  span {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    color: $c2;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 1.125rem;
+
+    color: $c3;
+  }
+}

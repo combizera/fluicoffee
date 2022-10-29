@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   max-width: 1200px;
   margin: 0 auto !important;
@@ -11,18 +12,19 @@
 }
 
 header {
-  position: absolute;
-  background: rgba(234, 231, 231, 0.2);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
   width: 100%;
-  padding: 1rem 0px;
+  padding: 1rem 60px;
   display: flex;
   justify-content: space-between;
 }
 
+.bg-header {
+  background: #fe641e;
+}
+
 .header__nav {
   display: flex;
+  color: #ebebeb;
 }
 
 @media screen and (max-width: 1200px) {
@@ -99,9 +101,10 @@ a {
 
 .link {
   padding: 8px 24px;
-  font-size: 18px;
+  font-weight: 400;
   transition: 0.4s ease;
   position: relative;
+  color: #ebebeb;
 }
 .link::after {
   content: "";
@@ -533,7 +536,7 @@ h6 {
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 40px 0;
+  padding: 40px 20px;
   gap: 40px;
 }
 
@@ -620,6 +623,110 @@ a {
     gap: 40px;
   }
 }
+.maq-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 120px 60px;
+}
+
+.maq-hero-txt h2 {
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #1b1c27;
+  position: relative;
+}
+.maq-hero-txt h2::after {
+  content: "";
+  width: 100px;
+  height: 5px;
+  background-color: #1b1c27;
+  position: absolute;
+  left: 0;
+  top: -1rem;
+}
+.maq-hero-txt h4 {
+  font-size: 60px;
+  color: #1b1c27;
+  padding: 40px 0;
+}
+.maq-hero-txt p {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 140%;
+  color: #606060;
+}
+.maq-hero-txt a {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #fff8ee;
+  background: #fe641e;
+  box-shadow: 0px 21px 80px rgba(254, 100, 30, 0.18), 0px 6.33089px 24.1177px rgba(254, 100, 30, 0.11), 0px 2.62953px 10.0172px rgba(254, 100, 30, 0.09), 0px 0.951048px 3.62304px rgba(254, 100, 30, 0.06);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.4s;
+}
+.maq-hero-txt a:hover {
+  box-shadow: 0px 21px 80px rgba(254, 101, 30, 0.378), 0px 6.33089px 24.1177px rgba(254, 101, 30, 0.384), 0px 2.62953px 10.0172px rgba(254, 101, 30, 0.29), 0px 0.951048px 3.62304px rgba(254, 101, 30, 0.29);
+  transform: scale(1.01);
+}
+
+.maq-dados-boxes {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 0.5rem;
+}
+
+.maq-dados-img {
+  background-image: url("./../img/maquina.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.maq-dados-img2 {
+  background-image: url("./../img/blog1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.maq-dados-box {
+  background: #f8edde;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 80px 20px;
+}
+.maq-dados-box h6 {
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 120px;
+  color: #fe641e;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  display: flex;
+  justify-content: center;
+}
+.maq-dados-box span {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  color: #606060;
+}
+.maq-dados-box p {
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #aaa;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -647,6 +754,29 @@ p::selection {
   color: #faf9f2;
 }
 
+/* Estilização da barra de scroll */
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #bdab91 #f6f7f9;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f6f7f9;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #bdab91;
+  border-radius: 20px;
+  border: 3px solid #f6f7f9;
+}
+
+/* Fim da Estilização da barra de scroll */
 body {
   width: 100%;
   background-color: #fff8ee;
