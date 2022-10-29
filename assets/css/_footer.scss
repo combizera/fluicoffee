@@ -78,3 +78,21 @@ a {
     }
   }
 }
+
+.footer-solary {
+  background-color: $coffee-dark;
+  font-family: "Josefin Sans";
+  font-weight: 200;
+  line-height: 20px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+@media (max-width: 800px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+}
