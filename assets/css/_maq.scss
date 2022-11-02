@@ -75,7 +75,7 @@
   }
 }
 
-.maq-dados-boxes {
+.maq-dados-boxes section {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   gap: 0.5rem;
@@ -121,8 +121,18 @@
   p {
     font-weight: 500;
     font-size: 1.125rem;
-
     color: $c3;
+  }
+  img {
+    margin: 0 auto;
+    opacity: 0.7;
+    transition: 0.3s;
+    padding-bottom: 1rem;
+  }
+  &:hover {
+    img {
+      opacity: 1;
+    }
   }
 }
 

@@ -751,7 +751,7 @@ a {
   bottom: -0.5rem;
 }
 
-.maq-dados-boxes {
+.maq-dados-boxes section {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   gap: 0.5rem;
@@ -796,6 +796,15 @@ a {
   font-weight: 500;
   font-size: 1.125rem;
   color: #aaa;
+}
+.maq-dados-box img {
+  margin: 0 auto;
+  opacity: 0.7;
+  transition: 0.3s;
+  padding-bottom: 1rem;
+}
+.maq-dados-box:hover img {
+  opacity: 1;
 }
 
 @media (max-width: 960px) {
@@ -920,4 +929,35 @@ img {
 
 .borda {
   border: 1px solid red;
+}
+
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+.js-tabcontent section {
+  display: none;
+}
+
+.js-tabcontent section.active {
+  display: grid;
+  -webkit-animation: show 0.5s forwards;
+          animation: show 0.5s forwards;
 }/*# sourceMappingURL=style.css.map */
