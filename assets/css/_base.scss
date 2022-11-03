@@ -13,3 +13,11 @@ $orange: #fe641e;
 $am: #dda15e;
 $az: #91b5bd;
 $az-dark: #1b1c27;
+
+// Gerais
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  border: 2px solid green;
+}

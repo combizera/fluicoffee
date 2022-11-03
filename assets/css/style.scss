@@ -1,6 +1,7 @@
 // Base
 @import "./_base.scss";
-@import "./_layout.scss";
+@import "./_header.scss";
+@import "./hero.scss";
 @import "./_tipo.scss";
 @import "./_secoes.scss";
 @import "./_blog.scss";
@@ -73,10 +74,6 @@ img {
   max-height: 100%;
   object-fit: cover;
   display: block;
-}
-
-.borda {
-  border: 1px solid red;
 }
 
 @keyframes show {

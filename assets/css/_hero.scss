@@ -1,0 +1,66 @@
+// Hero
+.hero__bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./../img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 80px;
+  height: 100vh;
+  h1 {
+    font-weight: 700;
+    font-size: 3.5rem;
+    letter-spacing: 0.1em;
+
+    color: $coffee-light;
+  }
+
+  h2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5rem;
+
+    color: $coffee-normal;
+    margin: 20px 0 40px 0;
+  }
+}
+
+// Tablet
+@media (max-width: 960px) {
+  .hero__bg {
+    height: calc(100vh - 55px);
+  }
+
+  .hero {
+    padding: 0 60px;
+    height: calc(100vh - 55px);
+  }
+}
+
+// Celulares
+@media screen and (max-width: 800px) {
+  .hero__bg {
+    height: calc(100vh - 60px);
+  }
+  .hero {
+    padding: 0 20px;
+    height: calc(100vh - 60px);
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+}
