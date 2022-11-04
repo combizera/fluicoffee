@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 120px 60px;
+  gap: 40px;
 }
 
 .maq-hero-img {
@@ -125,7 +126,7 @@
   }
   img {
     margin: 0 auto;
-    opacity: 0.7;
+    opacity: 0.5;
     transition: 0.3s;
     padding-bottom: 1rem;
   }
@@ -136,59 +137,50 @@
   }
 }
 
+.mentoria-tit {
+  margin-bottom: 2rem;
+}
+
 // Tablet
 @media (max-width: 960px) {
   .maq-hero {
-    grid-template-columns: 1fr;
     padding: 120px 40px;
-    gap: 80px;
-    justify-items: center;
+    gap: 20px;
   }
 
-  .maq-dados-boxes {
-    display: grid;
+  .maq-dados {
+    padding: 80px 40px;
+  }
+
+  .maq-dados-boxes section {
     grid-template-columns: 50% 50%;
-    padding: 0 20px;
-    gap: 0.5rem;
-  }
-
-  .maq-dados-box {
-    h6 {
-      font-size: 90px;
-      line-height: 90px;
-    }
-
-    span {
-      font-size: 1.5rem;
-      line-height: 1.5rem;
-    }
   }
 }
 
 // Celular
 @media (max-width: 800px) {
   .maq-hero {
-    padding: 80px 20px;
+    grid-template-columns: 1fr;
+    padding: 120px 20px;
+    gap: 20px;
   }
 
   .maq-hero-txt {
-    align-items: stretch;
-    a {
-      text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    h2 {
+      margin-top: 4rem;
     }
   }
 
-  .maq-dados-boxes {
-    display: grid;
+  .maq-dados {
+    padding: 80px 20px;
+  }
+
+  .maq-dados-boxes section {
     grid-template-columns: 1fr;
-    padding: 0 20px;
-    gap: 0.5rem;
-  }
-
-  .maq-dados-box {
-    span {
-      font-size: 1.5rem;
-      line-height: 1.5rem;
-    }
   }
 }
