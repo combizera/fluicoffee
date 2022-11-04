@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Descrição -->
+    <meta name="description" content="Fluicoffe, empresa pioneira na produção e torra de máquinas que utilizam a tecnologia de Leito Fluidizado. Oferecemos mentorias para pequenos e médios produtores, além do serviço de torra e venda de maquinário.">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- Fontes -->
@@ -24,11 +29,11 @@
                     <img src="./assets/img/icon/logo.svg" alt="Logotipo Fluicoffee">
                 </a>
             </div>
-            <nav class="header__nav">
+            <nav class="header__nav" data-menu="list" role="menu">
                 <button id="btn-mobile" data-menu="button" aria-expanded="false" aria-controls="menu" aria-haspopup="true" aria-label="Abrir Menu">Menu
                     <span id="hamburguer"></span>
                 </button>
-                <ul id="menu" data-menu="list" role="menu">
+                <ul id="menu">
                     <li><a href="./maquinas.html" class="link">máquinas</a></li>
                     <li><a href="./mentoria.html" class="link">mentoria</a></li>
                     <li><a href="./torras.html" class="link">torras</a></li>
@@ -39,7 +44,7 @@
     </div>
 
     <main>
-        <div class="hero__bg">
+        <div class="hero__bg" aria-label="Introdução do site">
             <section class="container hero">
                 <h1>Descubra o Leito Fluidizado</h1>
                 <h2>Máquinas. Mentorias para cafés especiais. Serviços de torra</h2>
@@ -47,7 +52,7 @@
             </section>
         </div>
 
-        <section class="equipment container">
+        <section class="equipment container" aria-label="Seção que explica sobre as máquinas">
             <h3>Equipamentos</h3>
             <div class="sec__grid ">
                 <div class='sec__txt'>
@@ -63,10 +68,10 @@
             </div>
         </section>
 
-        <section class="mentoria container">
+        <section class="mentoria container" aria-label="Seção que explica sobre a mentoria">
             <h3>Mentoria</h3>
             <div class="sec__grid sec__invertido borda">
-                <div class="sec__img"><img src="./assets/img/barista.jpg" alt="Guilherme Ferreira, responsável pela mentoria"></div>
+                <div class="sec__img"><img src="./assets/img/barista.webp" alt="Guilherme Ferreira, responsável pela mentoria"></div>
                 <div class='sec__txt'>
                     <span>especialistas</span>
                     <h2>Eleve o nível do seu negócio</h2>
@@ -79,7 +84,7 @@
             </div>
         </section>
 
-        <section class="roast container">
+        <section class="roast container" aria-label="Seção que explica sobre as torras">
             <h3>Serviços de torra</h3>
             <div class="sec__grid borda">
                 <div class='sec__txt'>
@@ -91,11 +96,11 @@
                     </p>
                     <a class="btn__sec" href="./torras.html">Saiba como funciona</a>
                 </div>
-                <div class="sec__img"><img src="./assets/img/torra.jpg" alt="Cafés torrados pelo método de leito fluidizado"></div>
+                <div class="sec__img"><img src="./assets/img/torra.webp" alt="Cafés torrados pelo método de leito fluidizado"></div>
             </div>
         </section>
 
-        <article id="numeros" class="bg-num">
+        <article id="numeros" class="bg-num" aria-label="Alguns números da Fluicoffee">
             <div class="container num-grid">
                 <div class="num-item">
                     <div class="num-img"><img src="./assets/img/icon/num1.svg" alt="Número de alunos formados"></div>
@@ -128,7 +133,7 @@
             </div>
         </article>
 
-        <article class="depoimento">
+        <article class="depoimento" aria-label="Depoimentos de clientes da Flui">
             <h3>O que dizem sobre nós</h3>
         </article>
 
